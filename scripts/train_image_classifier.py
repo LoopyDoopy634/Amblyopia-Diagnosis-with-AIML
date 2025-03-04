@@ -12,11 +12,11 @@ def load_preprocessed_data(data_folder):
     X_val = np.load(os.path.join(data_folder, "X_val.npy"))
     y_val = np.load(os.path.join(data_folder, "y_val.npy"))
 
-    # Convert labels to integers (if they are strings)
-    if y_train.dtype == object:
-        y_train = y_train.astype(np.int32)
-    if y_val.dtype == object:
-        y_val = y_val.astype(np.int32)
+    # Debug: Check data types
+    print("y_train dtype:", y_train.dtype)
+    print("y_val dtype:", y_val.dtype)
+    print("Sample y_train:", y_train[:10])
+    print("Sample y_val:", y_val[:10])
 
     return X_train, X_val, y_train, y_val
 

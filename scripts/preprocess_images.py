@@ -63,8 +63,8 @@ def save_preprocessed_data(output_folder, X_train, X_val, y_train, y_val):
 
 if __name__ == "__main__":
     # Define paths
-    image_folder = "data/images"
-    labels_csv = "data/labels.csv"
+    image_folder = "data/test"
+    labels_csv = "data/testlabels.csv"
     output_folder = "data/processed"
 
     # Load and preprocess images
